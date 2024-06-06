@@ -154,6 +154,14 @@ require('lazy').setup({
   -- "gc" to comment visual regions/lines
   { 'numToStr/Comment.nvim', opts = {} },
   {
+    'f-person/git-blame.nvim', -- Adds git-blame capabilities. Use :GitBlameToggle
+    config = function()
+      require('gitblame').setup {
+        enable = true,
+      }
+    end,
+  },
+  {
     'stevearc/oil.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
     config = function()
