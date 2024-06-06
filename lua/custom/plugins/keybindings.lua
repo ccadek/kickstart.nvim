@@ -6,6 +6,12 @@ return {
   -- disable ctrl-z to not suspend vim in the background
   vim.api.nvim_set_keymap('', '<c-z>', '', { noremap = true }),
 
+  -- open Lazy
+  vim.api.nvim_set_keymap('n', '<leader>l', ':Lazy<CR>', { noremap = true }),
+
+  -- close all buffers at once
+  vim.api.nvim_set_keymap('n', '<leader>qq', '<cmd>qa<cr>', { desc = 'Quit All' }),
+
   -- disable Q altogether
   vim.keymap.set('n', 'Q', '<nop>'),
 
