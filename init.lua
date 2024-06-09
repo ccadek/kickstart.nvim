@@ -157,7 +157,7 @@ require('lazy').setup({
     'f-person/git-blame.nvim', -- Adds git-blame capabilities. Use :GitBlameToggle
     config = function()
       require('gitblame').setup {
-        enable = true,
+        enable = false,
       }
     end,
   },
