@@ -1,5 +1,17 @@
--- You can add your own plugins here or in other files in this directory!
---  I promise not to create any merge conflicts in this directory :)
---
--- See the kickstart.nvim README for more information
-return {}
+return {
+  require 'custom.plugins.vim-sleuth',
+  require 'custom.plugins.comment.comment',
+  require 'custom.plugins.git.git-blame',
+  require 'custom.plugins.oil',
+  require 'custom.plugins.git.gitsigns',
+  require 'custom.plugins.which-key',
+  require 'custom.plugins.telescope',
+  require 'custom.plugins.lsp.lspconfig',
+  require 'custom.plugins.lsp.conform',
+  require 'custom.plugins.lsp.nvim-cmp',
+  require 'custom.plugins.ui.catppuccin',
+  require 'custom.plugins.ui.colorizer',
+  require 'custom.plugins.comment.todo-comments',
+  require 'custom.plugins.mini',
+  require 'custom.plugins.treesitter',
+}
