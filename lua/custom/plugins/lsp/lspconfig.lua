@@ -196,29 +196,6 @@ return { -- LSP Configuration & Plugins
     -- for you, so that they are available from within Neovim.
     local ensure_installed = vim.tbl_keys(servers or {})
     vim.list_extend(ensure_installed, {
-      'eslint-lsp',
-      'goimports',
-      'gopls',
-      'gotests',
-      'gotestsum',
-      'gradle-language-server',
-      'groovy-language-server',
-      'jdtls',
-      'js-debug-adapter',
-      'json-lsp',
-      'kotlin-language-server',
-      'ktlint',
-      'lua-language-server',
-      'marksman',
-      'nixpkgs-fmt',
-      'prettier',
-      'prettierd',
-      'rnix-lsp',
-      'shfmt',
-      'stylua',
-      'typescript-language-server',
-      'vtsls',
-      'yaml-language-server',
     })
     require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
