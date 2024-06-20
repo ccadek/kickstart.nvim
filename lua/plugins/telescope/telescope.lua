@@ -74,6 +74,6 @@ return {
     -- Telescope file preview should display line number
     vim.cmd 'autocmd User TelescopePreviewerLoaded setlocal number'
 
-    require 'custom.plugins.telescope.telescope-keybindings'
+    require 'plugins.telescope.telescope-keybindings'
   end,
 }
