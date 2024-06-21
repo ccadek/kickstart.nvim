@@ -42,4 +42,7 @@ return {
     vim.cmd [[setfiletype json]]
     vim.cmd [[%!jq .]]
   end, { nargs = 0 }),
+
+  -- show git history of selection
+  vim.keymap.set('v', '<leader>gl', ":<c-u>exe ':term git log -L' line(\"'<\").','.line(\"'>\").':'.expand('%')<CR>"),
 }
