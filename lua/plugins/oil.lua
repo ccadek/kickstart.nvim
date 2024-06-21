@@ -11,7 +11,6 @@ return {
         ['<C-h>'] = false,
         ['<M-h>'] = 'actions.select_split',
         ['g.'] = 'actions.toggle_hidden',
-        [':q'] = 'actions.close',
       },
       view_options = {
         show_hidden = true,
